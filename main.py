@@ -3,6 +3,7 @@
 
 from typing import Union
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 #Add more tools import below:
 
@@ -13,6 +14,18 @@ app = FastAPI(
     title="RIT-Mult-Tools",
     description="API Gateway for various simple tools",
     version="0.1"
+)
+
+origins = [
+    "http://127.0.0.1:5500", # for local testing with Live Server
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 #Plug & Play Section
