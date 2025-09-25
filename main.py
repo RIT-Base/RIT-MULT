@@ -17,7 +17,8 @@ app = FastAPI(
 )
 
 origins = [
-    "http://127.0.0.1:5500", # for local testing with Live Server
+    "http://127.0.0.1:5500",
+    "http://127.0.0.1:5500/index.html" # for local testing with Live Server
 ]
 
 app.add_middleware(
