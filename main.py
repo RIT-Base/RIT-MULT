@@ -6,7 +6,7 @@ from fastapi import FastAPI
 
 #Add more tools import below:
 
-from tools import base64_converter, reverse_text
+from tools import base64_converter, reverse_text, word_counter
 
 #App Instance
 app = FastAPI(
@@ -18,6 +18,7 @@ app = FastAPI(
 #Plug & Play Section
 app.include_router(base64_converter.router, prefix="/crypto_tools", tags=["Base64 Converter"])
 app.include_router(reverse_text.router, prefix="/text_tools", tags=["Text Reversal"])
+app.include_router(word_counter.router, prefix="/text_tools", tags=["Word Counter"])
 
 @app.get("/")
 def read_root():
