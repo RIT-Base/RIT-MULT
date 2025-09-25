@@ -17,7 +17,7 @@ Read more about venv [here.](https://docs.python.org/3/library/venv.html)
 
 ## 1. Clone this repo:
 ```bash
-git clone [repository-url]
+git clone https://github.com/RIT-Base/RIT-MULT.git
 cd [your-repository-folder]
 ```
 
