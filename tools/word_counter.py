@@ -13,7 +13,7 @@ async def example_endpoint(payload: ExampleInput):
     """
     Word Counter
     """
-    text = payload.text.strip()
+    text = payload.data.strip()
     
     words = text.split()
     word_count = len(words)

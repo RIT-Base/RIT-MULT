@@ -8,4 +8,4 @@ class Input(BaseModel):
 
 @router.post("/reverse")
 async def reverse_text(payload: Input):
-    return {"result": payload.text[::-1]}
+    return {"result": payload.data[::-1]}
