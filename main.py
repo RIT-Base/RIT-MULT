@@ -1,7 +1,6 @@
 # This serve as main code + reference for this project.
 # Single endpoint + tool.
 
-from typing import Union
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
