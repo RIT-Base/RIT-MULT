@@ -5,7 +5,7 @@ from pydantic import BaseModel
 router = APIRouter()
 
 class ExampleInput(BaseModel):
-    text: str
+    data: str
 
 # Contoh endpoint (hapus/ubah sesuai kebutuhan)
 @router.post("/word_count")

@@ -4,7 +4,7 @@ from pydantic import BaseModel
 router = APIRouter()
 
 class Input(BaseModel):
-    text: str
+    data: str
 
 @router.post("/reverse")
 async def reverse_text(payload: Input):
